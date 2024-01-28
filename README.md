@@ -35,8 +35,14 @@ To build this project you will need to have an instance of [Docker](https://www.
     ```
     git clone https://github.com/xApologize/ft_transcendence.git
     ```
-2. Set the environment. The project comes with a [tool](https://github.com/xApologize/ft_transcendence/blob/main/tools/env_maker.sh) that you can use to easily generate the .env file for the project.
-      1. Additionally, if you are a 42 student and want to make use of the 42 OAuth to login, you will need to fill the .env file in the backend folder. The ```AUTH42_CLIENT``` and ```AUTH42_SECRET``` will be generated when you create your app in the intra. Fill the ```AUTH42_LINK``` with the url generated whe nyou created the app. ```AUTH42_REDIRECT_URI``` will need to be ```https://your-domain/callback```, you can also use localhost instead if you will be using it locally.
+2. Setting Up the Environment:
+   - The project includes a [tool](https://github.com/xApologize/ft_transcendence/blob/main/tools/env_maker.sh) that simplifies the creation of the `.env` file needed for the project.
+   - For 42 students who wish to use the 42 OAuth for login:
+     1. Update the `.env` file in the backend folder.
+     2. The `AUTH42_CLIENT` and `AUTH42_SECRET` values will be generated when you create your app on the intra.
+     3. Fill in the `AUTH42_LINK` with the URL you obtained when creating your app.
+     4. Set `AUTH42_REDIRECT_URI` to `https://your-domain/callback`. If you're working locally, you can use `localhost` instead.
+
   
 3. Run the containers in the project root with
    ```
